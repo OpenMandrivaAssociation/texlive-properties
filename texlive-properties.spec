@@ -44,6 +44,7 @@ file, e.g. \jobname.properties.
 %{_texmfdistdir}/tex/latex/properties/properties.sty
 %doc %{_texmfdistdir}/doc/latex/properties/readme.de
 %doc %{_texmfdistdir}/doc/latex/properties/testprop.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +55,5 @@ file, e.g. \jobname.properties.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
