@@ -6,7 +6,7 @@
 # catalog-version 0.2
 Name:		texlive-properties
 Version:	0.2
-Release:	10
+Release:	11
 Summary:	Load properties from a file
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/properties
